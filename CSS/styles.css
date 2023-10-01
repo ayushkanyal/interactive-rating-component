@@ -8,10 +8,6 @@ body{
     font-size: 15px;
 }
 
-.hidden{
-    display: none;
-}
-
 /* Feedback Box */
 /* Head Text Section */
 
@@ -98,7 +94,46 @@ body{
 /* Thank-you Box */
 
 /* Head Section */
+
+.thank--you{
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.thank--you > img{
+    height: 80px;
+    margin-bottom: 18px;
+}
+
+.thank--you__score{
+    color: hsl(25, 97%, 53%);
+    background-color: color-mix(in hsl, hsl(216, 12%, 8%) 80%, hsl(216, 12%, 54%));
+    width: 60%;
+    padding: 2%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 0 auto;
+}
+
+.thank--you__heading{
+    margin: 20px 0 10px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.thank--you__description{
+    color:hsl(216, 12%, 54%);
+}
+
+/* Classes for javascript Logic */
+
 .selected{
     background-color: color-mix(in hsl, hsla(217, 12%, 63%) 80%, black);
     color: white;
+}
+
+.hidden{
+    display: none;
 }
