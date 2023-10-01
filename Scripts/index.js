@@ -9,8 +9,10 @@ function handleClick(event){
     document.getElementById(elementId).classList.add("selected");
 }
 
-function handleSubmit(){
-   document.getElementById("feedback").classList.add("hidden");
-   document.getElementById("thank--you").classList.remove("hidden");
-
+function handleSubmit(event){
+   document.getElementsByClassName("feedback")[0].classList.add("hidden");
+   document.getElementsByClassName("thank--you")[0].classList.remove("hidden");
+   let score = document.getElementsByClassName("thank--you__score")[0]; 
+   console.log(event);
+   console.log(score.innerHTML);
 }
