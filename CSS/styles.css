@@ -8,9 +8,14 @@ body{
     font-size: 15px;
 }
 
+.hidden{
+    display: none;
+}
+
+/* Feedback Box */
 /* Head Text Section */
 
-.feedback{
+.container{
     border-radius: 20px;
     width: 50%;
     max-width: 320px;
@@ -19,7 +24,7 @@ body{
     background-color: color-mix(in hsl, hsl(216, 12%, 8%) 75%, hsl(214, 65%, 10%) 90%) ;
 }
 
-img{
+.icon{
     width: 20px;
     padding: 15px;
     border-radius: 50%;
@@ -88,4 +93,12 @@ img{
     border-color: white;
     cursor: pointer;
     color: hsl(25, 97%, 53%);
+}
+
+/* Thank-you Box */
+
+/* Head Section */
+.selected{
+    background-color: color-mix(in hsl, hsla(217, 12%, 63%) 80%, black);
+    color: white;
 }
