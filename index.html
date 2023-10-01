@@ -27,8 +27,8 @@
   </head>
   <body>
     <!-- Rating state start -->
-    <div class="feedback">
-      <img src="./images/icon-star.svg" alt="star-icon">
+    <div id="feedback" class="container">
+      <img class="icon" src="./images/icon-star.svg" alt="star-icon">
       <h1 class="feedback__request">How did we do?</h1>
 
       <p class="feedback__request__text">
@@ -37,20 +37,20 @@
       </p>
 
       <div class="rating">
-        <div class="rating__score">1</div>
-        <div class="rating__score">2</div>
-        <div class="rating__score">3</div>
-        <div class="rating__score">4</div>
-        <div class="rating__score">5</div>
+        <div class="rating__score" value="one" id="one" onClick= 'handleClick()'>1</div>
+        <div class="rating__score" value="two" id="two">2</div>
+        <div class="rating__score" value="three" id="three">3</div>
+        <div class="rating__score" value="four" id="four">4</div>
+        <div class="rating__score" value="five" id="five">5</div>
       </div>
 
-      <button class="submit--button" type="submit">Submit</button>
+      <button class="submit--button" type="submit" onClick="handleSubmit()">Submit</button>
     </div>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="thank-you"></div>
-      <img>
+    <div id="thank--you" class="container hidden">
+      <img src="images/illustration-thank-you.svg">
       <div>You selected out of 5</div>
       
       <!-- Add rating here -->
