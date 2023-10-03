@@ -17,14 +17,14 @@ body{
     max-width: 320px;
     margin: 100px auto;
     padding: 20px 25px;
-    background-color: color-mix(in hsl, hsl(216, 12%, 8%) 75%, hsl(214, 65%, 10%) 90%) ;
+    background-color: color-mix(in hsl, hsl(216, 12%, 8%) 5%, hsl(214, 65%, 10%) 75%) ;
 }
 
 .icon{
     width: 20px;
     padding: 15px;
     border-radius: 50%;
-    background-color: color-mix(in hsl, hsl(213, 19%, 18%) 90%, hsl(216, 12%, 54%));
+    background-color: color-mix(in hsl, hsl(216, 12%, 8%) 33% , hsl(213, 19%, 18%) 80% ) ;
 }
 
 .feedback__request{
@@ -136,4 +136,24 @@ body{
 
 .hidden{
     display: none;
+}
+
+/* Mobile Designs */
+
+@media (max-width: 376px){
+    .container{
+        min-width: 250px;
+        font-size: 15px;
+    }
+
+    .icon{
+        width: 15px;
+        padding: 12px;
+    }
+
+    .thank--you__score{
+        padding-left: 6%;
+        padding-right: 6%;
+        white-space: nowrap;
+    }
 }
